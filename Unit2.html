@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+
+<head>
+
+	<title>Group Project 1</title>
+
+	<script>
+
+		//a function for each button 
+		function add() {
+			//get the first number 
+			n1 = prompt('first number'),
+				//get the second number 
+				n2 = prompt('second number');
+			//convert strings to integers 
+			num1 = parseInt(n1);
+			num2 = parseInt(n2);
+			//add both numbers and save as 'answer' variable 
+			var answer = (num1 + num2);
+			//display the answer 
+			alert(n1 + " + " + n2 + " = " + answer);
+		}
+
+		function subtract() {
+			n1 = prompt('first number'),
+				n2 = prompt('second number');
+			num1 = parseInt(n1);
+			num2 = parseInt(n2);
+			var answer = (num1 - num2);
+			alert(n1 + " - " + n2 + " = " + answer);
+		}
+		function multiply() {
+			n1 = prompt('first number'),
+				n2 = prompt('second number');
+			num1 = parseInt(n1);
+			num2 = parseInt(n2);
+			var answer = (num1 * num2);
+			alert(n1 + " x " + n2 + " = " + answer);
+		}
+		function divide() {
+			n1 = prompt('first number'),
+				n2 = prompt('second number');
+			num1 = parseInt(n1);
+			num2 = parseInt(n2);
+			var answer = (num1 / num2);
+			alert(n1 + " / " + n2 + " = " + answer);
+		}
+	</script>
+
+	<!-- visual changes -->
+	<style>
+		body {
+			background-color: #E0E0E0;
+			color: #78909C;
+		}
+
+		h1 {
+			font-family: sans-serif;
+		}
+
+		button {
+			padding: 5px;
+			color: white;
+			background-color: #78909C;
+		}
+
+		button:hover {
+			background-color: #B0BEC5;
+		}
+	</style>
+</head>
+
+<body>
+	<h1>Unit 2 Assignment</h1>
+	<hr>
+
+	<button onclick="add()">add</button>
+	<button onclick="subtract()">subtract</button>
+	<button onclick="multiply()">multiply</button>
+	<button onclick="divide()">divide</button>
+
+</body>
+
+</html>

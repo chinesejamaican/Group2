@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta charset="utf-8" />
     <title>Group Project 1</title>
@@ -25,6 +25,7 @@
         num1 = parseInt(n1);
         num2 = parseInt(n2);
         var answer = num1 - num2;
+        4;
         alert(n1 + " - " + n2 + " = " + answer);
       }
       function multiply() {
@@ -46,8 +47,8 @@
     <!-- visual changes -->
     <style>
       body {
-        background-color: #e0e0e0;
-        color: #78909c;
+        background-color: #b5e4ff;
+        color: #005281;
       }
 
       h1 {
@@ -57,11 +58,12 @@
       button {
         padding: 5px;
         color: white;
-        background-color: #78909c;
+        background-color: #005281;
       }
 
       button:hover {
-        background-color: #b0bec5;
+        background-color: white;
+        color: #005281;
       }
     </style>
   </head>
@@ -74,5 +76,7 @@
     <button onclick="subtract()">subtract</button>
     <button onclick="multiply()">multiply</button>
     <button onclick="divide()">divide</button>
+
+    <br /><img src="images/cal.png" alt="calculator" id="cal" />
   </body>
 </html>
